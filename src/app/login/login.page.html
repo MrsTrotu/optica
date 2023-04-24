@@ -1,0 +1,41 @@
+<html>
+<app-header nombrepage="Login"></app-header>
+
+<ion-content class="ion-padding">
+
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Bienvenido de vuelta</h1>
+      <p>Inicia sesion para continuar</p>
+    </div>
+    <div class="login-form ion-padding">
+      <div class="form-input">
+        <ion-item class="ion-item">
+          <ion-icon name="mail-outline"></ion-icon>
+
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-item class="ion-item">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div class="action-buttons ion-paddig">
+      <ion-button size="large" class="login-button"> Iniciar Sesion </ion-button>
+      <a routerLink="/forget-password">
+        <p>Olvidaste tu contraseña?</p>
+      </a>
+      <ion-button class="signup-button" size="large" fill="outline" routerLink="/register">Registrarse </ion-button>
+    </div>
+  </div>
+
+</ion-content>
+
+<app-footer nombrepage="Login"></app-footer>
+
+</html>

@@ -1,0 +1,69 @@
+<app-header nombrepage="Register"></app-header>
+
+<ion-content style="--overflow: hidden;">
+
+  <div class="login-section ion-padding">
+
+    <ion-content>
+
+      <div class="heading ion-padding">
+
+        <h1>Crea una cuenta</h1>
+        <br>
+
+      </div>
+
+      <div class="login-form ion-padding" [formGroup]="onRegisterForm">
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input formControlName="name" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <ion-label position="floating">Correo</ion-label>
+            <ion-input formControlName="email" type="email"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+
+            <ion-label position="floating">Confirmar contraseña</ion-label>
+            <ion-input formControlName="confirm" type="password"></ion-input>
+          </ion-item>
+        </div>
+
+      </div>
+
+      <div class="action-buttons ion-paddig">
+        <ion-button size="large" class="login-button" (click)="saveUser()"> Registrarme </ion-button>
+        <p>Ya tienes una cuenta?</p>
+        <ion-button class="signup-button" style="margin-bottom: 10%;" size="large" fill="outline"
+          routerLink="/login">Iniciar Sesion </ion-button>
+      </div>
+
+    </ion-content>
+
+  </div>
+
+</ion-content>
+
+<app-footer nombrepage="Register"></app-footer>
