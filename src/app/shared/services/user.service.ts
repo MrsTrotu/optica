@@ -15,7 +15,23 @@ export class UserService {
 
     let request;
 
-    return this.http.post(this.url + '/users/create', form);
+    return this.http.post(this.url + '/users/createO', form);
+
+  }
+
+  loginUser(form:any){
+    
+    let request;
+
+    return this.http.post(this.url+'/users/login', form);
+
+  }
+
+  recoverPass(form:any){
+    
+    let request;
+
+    return this.http.post(this.url+'/users/forgotpass', form);
 
   }
 }

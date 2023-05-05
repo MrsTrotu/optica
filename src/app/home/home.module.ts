@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LoginPageRoutingModule } from './login-routing.module';
+import { HomePageRoutingModule } from './home-routing.module';
 
-import { LoginPage } from './login.page';
+import { HomePage } from './home.page';
 import { ComponentsModule } from '../header/components.module';
 import { FootersModule } from '../footer/components.module';
 
@@ -15,11 +15,10 @@ import { FootersModule } from '../footer/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ReactiveFormsModule,
-    LoginPageRoutingModule,
+    HomePageRoutingModule,
     ComponentsModule,
     FootersModule
   ],
-  declarations: [LoginPage]
+  declarations: [HomePage]
 })
-export class LoginPageModule {}
+export class HomePageModule {}

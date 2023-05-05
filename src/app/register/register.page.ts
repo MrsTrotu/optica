@@ -19,6 +19,27 @@ export class RegisterPage implements OnInit {
       'name':["", Validators.compose([
         Validators.required
       ])],
+      'lastnamep':["", Validators.compose([
+        Validators.required
+      ])],
+      'lastnamem':["", Validators.compose([
+        Validators.required
+      ])],
+      'age':["", Validators.compose([
+        Validators.required
+      ])],
+      'gender':["", Validators.compose([
+        Validators.required
+      ])],
+      'phone':["", Validators.compose([
+        Validators.required
+      ])],
+      'refer':["", Validators.compose([
+        Validators.required
+      ])],
+      'ocupation':["", Validators.compose([
+        Validators.required
+      ])],
       'email':["", Validators.compose([
         Validators.required
       ])],
@@ -27,7 +48,19 @@ export class RegisterPage implements OnInit {
       ])],
       'confirm':["", Validators.compose([
         Validators.required
-      ])]
+      ])],
+      'direction':["", Validators.compose([
+        Validators.required
+      ])],
+      'city':["", Validators.compose([
+        Validators.required
+      ])],
+      'district':["", Validators.compose([
+        Validators.required
+      ])],
+      'postalcode':["", Validators.compose([
+        Validators.required
+      ])],
     });
     
   }

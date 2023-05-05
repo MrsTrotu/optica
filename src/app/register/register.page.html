@@ -26,10 +26,80 @@
 
         <div class="form-input">
           <ion-item class="ion-item">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <ion-label position="floating">Apellido Paterno</ion-label>
+            <ion-input formControlName="lastnamep" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <ion-label position="floating">Apellido Materno</ion-label>
+            <ion-input formControlName="lastnamem" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <ion-label position="floating">Edad</ion-label>
+            <ion-input formControlName="age" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+
+        <div class="form-input">
+          
+          <ion-list>
+
+            <ion-item class="ion-item">
+              
+              <ion-select formControlName="gender" aria-label="Fruit" interface="popover" placeholder="Sexo">
+                <ion-select-option value="Hombre">Hombre</ion-select-option>
+                <ion-select-option value="Mujer">Mujer</ion-select-option>
+                <ion-select-option value="No definido">No definido</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <ion-label position="floating">Telefono</ion-label>
+            <ion-input formControlName="phone" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="id-card-outline"></ion-icon>
+
+            <ion-label position="floating">Ocupacion</ion-label>
+            <ion-input formControlName="ocupation" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="people-circle-outline"></ion-icon>
+
+            <ion-label position="floating">Referido</ion-label>
+            <ion-input formControlName="refer" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
             <ion-icon name="mail-outline"></ion-icon>
 
             <ion-label position="floating">Correo</ion-label>
-            <ion-input formControlName="email" type="email"></ion-input>
+            <ion-input formControlName="email" type="text"></ion-input>
           </ion-item>
         </div>
 
@@ -51,10 +121,46 @@
           </ion-item>
         </div>
 
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="home-outline"></ion-icon>
+
+            <ion-label position="floating">Domicilio</ion-label>
+            <ion-input formControlName="direction" type="text"></ion-input>
+          </ion-item>
+        </div>
+        
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="business-outline"></ion-icon>
+
+            <ion-label position="floating">Ciudad</ion-label>
+            <ion-input formControlName="city" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="business-outline"></ion-icon>
+
+            <ion-label position="floating">Colonia</ion-label>
+            <ion-input formControlName="district" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-input">
+          <ion-item class="ion-item">
+            <ion-icon name="business-outline"></ion-icon>
+
+            <ion-label position="floating">Codigo Postal</ion-label>
+            <ion-input formControlName="postalcode" type="text"></ion-input>
+          </ion-item>
+        </div>
+
       </div>
 
       <div class="action-buttons ion-paddig">
-        <ion-button size="large" class="login-button" (click)="saveUser()"> Registrarme </ion-button>
+        <ion-button size="large" class="login-button" (click)="saveUser()" routerLink="/home" [disabled]="!onRegisterForm.valid"> Registrarme </ion-button>
         <p>Ya tienes una cuenta?</p>
         <ion-button class="signup-button" style="margin-bottom: 10%;" size="large" fill="outline"
           routerLink="/login">Iniciar Sesion </ion-button>
